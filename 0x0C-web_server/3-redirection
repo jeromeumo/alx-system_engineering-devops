@@ -7,4 +7,4 @@ sudo apt-get -y install nginx
 sudo chown -R "$USER":"$USER" /var/www
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 sudo sed -i '/server_name _;/a \\\tlocation \/watch\?v\=QH2-TGUlwu4 { \n\t\treturn 301 https:\/\/www.google.com; \n\t}' /etc/nginx/sites-available/default
-sudo service nginx starti
+sudo service nginx start
